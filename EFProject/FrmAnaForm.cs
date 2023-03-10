@@ -29,5 +29,11 @@ namespace EFProject
             FrmUrunlerForm urunlerForm = new FrmUrunlerForm();
             urunlerForm.Show();
         }
+
+        private void istatistikBtn_Click(object sender, EventArgs e)
+        {
+            FrmIstatistik istatistikorm = new FrmIstatistik();
+            istatistikorm.Show();
+        }
     }
 }

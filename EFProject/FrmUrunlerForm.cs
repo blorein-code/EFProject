@@ -93,7 +93,7 @@ namespace EFProject
                 x.MARKA,
                 x.STOK,
                 x.FIYAT,
-                x.TBLKATEGORI.AD,
+                x.TBLKATEGORI.AD,  //Tabloda id'ye karşılık gelen kelimeyi çağırmak için.
                 x.DURUM
             }).ToList();
         }
@@ -105,7 +105,7 @@ namespace EFProject
             tableObject.MARKA = markaText.Text;
             tableObject.STOK = short.Parse(stokText.Text);
             tableObject.FIYAT = decimal.Parse(fiyatText.Text);
-            tableObject.DURUM = true;
+            tableObject.DURUM = true; 
             tableObject.KATEGORI = int.Parse(kategoriCombo.SelectedValue.ToString());
 
             db.TBLURUN.Add(tableObject);

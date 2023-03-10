@@ -24,6 +24,7 @@ namespace EFProject
         public string MUSTERIAD { get; set; }
         public string MUSTERISOYAD { get; set; }
         public string SEHIR { get; set; }
+        
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TBLSATIS> TBLSATIS { get; set; }
